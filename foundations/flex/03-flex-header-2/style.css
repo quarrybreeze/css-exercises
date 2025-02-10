@@ -6,12 +6,18 @@ body {
   margin: 0;
   background: #eee;
   font-family: Besley, serif;
+
+  display: flex;   /*my answer*/
 }
 
 .header {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  display: flex;
+  flex: 1; /*my answer*/
+  padding: 8px;
+
 }
 
 .profile-image {
@@ -45,4 +51,22 @@ a {
 
 ul {
   list-style-type: none;
+  /* my answer below */
+  display: flex;
+  gap: 16px;
+}
+  /* my answer below */
+
+.left {
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.right {
+  display: flex;
+  gap: 16px;
+  margin: auto; 
+  align-items: center;
 }
