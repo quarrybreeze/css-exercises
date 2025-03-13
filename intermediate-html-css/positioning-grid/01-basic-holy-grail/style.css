@@ -46,3 +46,30 @@ html {
   color: white;
   text-align: left;
 }
+
+.container {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: 300px 900px;
+  grid-template-rows: 100px 100px 500px 100px;
+}
+
+.header {
+  grid-area: 1 / 1 / 1 / 4
+}
+
+.nav {
+  grid-area: 2 / 2 / 2 / 4
+}
+
+.article {
+  grid-area: 3 / 2 / 4 / 4
+}
+
+.sidebar {
+  grid-area: 2 / 1 / 4 / 1
+}
+
+.footer {
+  grid-area: 4 / 1 / 4 / 4
+}
