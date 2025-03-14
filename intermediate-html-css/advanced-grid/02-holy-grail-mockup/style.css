@@ -89,3 +89,81 @@
   font-size: 13px;
   font-weight: normal;
 }
+
+/* my answers below */
+
+ul {
+  list-style: none;
+}
+
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: auto;
+  gap: 4px;
+  grid-template-areas:
+    "header header"
+    "sidebar nav"
+    "sidebar article"
+    "footer footer"
+}
+
+
+
+.header {
+  grid-area: header;
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  align-items: center;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  display: grid;
+  gap: 50px;
+}
+
+.photo {
+  justify-content: center;
+  align-content: center;
+}
+
+.side-content {
+  justify-content: center;
+  align-content: center;
+}
+
+.nav {
+  grid-area: nav;
+}
+
+.nav ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.article {
+  grid-area: article;
+  display: grid;
+  gap: 15px;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.card {
+  height: 200px;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.logo {
+  justify-self: start;
+}
+
+.header ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
