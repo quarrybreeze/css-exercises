@@ -30,3 +30,21 @@ ul.dropdown-menu li:hover {
 }
 
 
+/* my answer below */
+
+@keyframes slide-in {
+  from {
+    transform: scale(1, 0);
+  }
+  80%{
+    transform: scale(1, 1.2);
+  }
+  to {
+    transform: scale(1, 1);
+  }
+}
+
+.visible {
+  animation: slide-in 1000ms;
+  transform-origin: top;
+}
